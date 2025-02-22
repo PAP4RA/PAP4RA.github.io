@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)https://madayo.github.io/html-js-parts/stopwatch.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./Document_files/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>Document</title>
+  <style>
+    html, body {
+      font-size: 1.0rem;
+    }
+    @media screen and (max-width: 480px) {
+      html, body {
+        font-size: 0.9rem;
+      }
+    }
+    .container {
+      max-width: 960px;
+    }
+    .form-control {
+      height: 2.0rem;
+      font-size: 0.85rem;
+    }
+    .list-group-item {
+      padding: .55rem 1.25rem;
+    }
+  </style>
+</head>
+<body>
+  <div id="app" class="container mt-4 text-center"><div class="my-2"><button type="button" class="btn btn-sm btn-danger">Reset all</button></div> <ul class="list-group"><li class="list-group-item"><input type="text" class="form-control mr-3 mb-2"> <div class="d-flex mt-2"><input type="text" readonly="readonly" class="d-block d-md-none form-control"> <input type="text" readonly="readonly" class="d-none d-md-block form-control"> <button type="button" class="mx-2 btn btn-sm btn-info">Start</button> <div role="status" class="mx-3 spinner-border text-info" style="display: none;"></div> <button disabled="disabled" type="button" class="mx-2 btn btn-sm btn-info">Stop</button> <button type="button" class="mx-2 btn btn-sm btn-danger">Reset</button></div></li><li class="list-group-item"><input type="text" class="form-control mr-3 mb-2"> <div class="d-flex mt-2"><input type="text" readonly="readonly" class="d-block d-md-none form-control"> <input type="text" readonly="readonly" class="d-none d-md-block form-control"> <button type="button" class="mx-2 btn btn-sm btn-info">Start</button> <div role="status" class="mx-3 spinner-border text-info" style="display: none;"></div> <button disabled="disabled" type="button" class="mx-2 btn btn-sm btn-info">Stop</button> <button type="button" class="mx-2 btn btn-sm btn-danger">Reset</button></div></li><li class="list-group-item"><input type="text" class="form-control mr-3 mb-2"> <div class="d-flex mt-2"><input type="text" readonly="readonly" class="d-block d-md-none form-control"> <input type="text" readonly="readonly" class="d-none d-md-block form-control"> <button type="button" class="mx-2 btn btn-sm btn-info">Start</button> <div role="status" class="mx-3 spinner-border text-info" style="display: none;"></div> <button disabled="disabled" type="button" class="mx-2 btn btn-sm btn-info">Stop</button> <button type="button" class="mx-2 btn btn-sm btn-danger">Reset</button></div></li><li class="list-group-item"><input type="text" class="form-control mr-3 mb-2"> <div class="d-flex mt-2"><input type="text" readonly="readonly" class="d-block d-md-none form-control"> <input type="text" readonly="readonly" class="d-none d-md-block form-control"> <button type="button" class="mx-2 btn btn-sm btn-info">Start</button> <div role="status" class="mx-3 spinner-border text-info" style="display: none;"></div> <button disabled="disabled" type="button" class="mx-2 btn btn-sm btn-info">Stop</button> <button type="button" class="mx-2 btn btn-sm btn-danger">Reset</button></div></li><li class="list-group-item"><input type="text" class="form-control mr-3 mb-2"> <div class="d-flex mt-2"><input type="text" readonly="readonly" class="d-block d-md-none form-control"> <input type="text" readonly="readonly" class="d-none d-md-block form-control"> <button type="button" class="mx-2 btn btn-sm btn-info">Start</button> <div role="status" class="mx-3 spinner-border text-info" style="display: none;"></div> <button disabled="disabled" type="button" class="mx-2 btn btn-sm btn-info">Stop</button> <button type="button" class="mx-2 btn btn-sm btn-danger">Reset</button></div></li><li class="list-group-item"><input type="text" class="form-control mr-3 mb-2"> <div class="d-flex mt-2"><input type="text" readonly="readonly" class="d-block d-md-none form-control"> <input type="text" readonly="readonly" class="d-none d-md-block form-control"> <button type="button" class="mx-2 btn btn-sm btn-info">Start</button> <div role="status" class="mx-3 spinner-border text-info" style="display: none;"></div> <button disabled="disabled" type="button" class="mx-2 btn btn-sm btn-info">Stop</button> <button type="button" class="mx-2 btn btn-sm btn-danger">Reset</button></div></li><li class="list-group-item"><input type="text" class="form-control mr-3 mb-2"> <div class="d-flex mt-2"><input type="text" readonly="readonly" class="d-block d-md-none form-control"> <input type="text" readonly="readonly" class="d-none d-md-block form-control"> <button type="button" class="mx-2 btn btn-sm btn-info">Start</button> <div role="status" class="mx-3 spinner-border text-info" style="display: none;"></div> <button disabled="disabled" type="button" class="mx-2 btn btn-sm btn-info">Stop</button> <button type="button" class="mx-2 btn btn-sm btn-danger">Reset</button></div></li><li class="list-group-item"><input type="text" class="form-control mr-3 mb-2"> <div class="d-flex mt-2"><input type="text" readonly="readonly" class="d-block d-md-none form-control"> <input type="text" readonly="readonly" class="d-none d-md-block form-control"> <button type="button" class="mx-2 btn btn-sm btn-info">Start</button> <div role="status" class="mx-3 spinner-border text-info" style="display: none;"></div> <button disabled="disabled" type="button" class="mx-2 btn btn-sm btn-info">Stop</button> <button type="button" class="mx-2 btn btn-sm btn-danger">Reset</button></div></li><li class="list-group-item"><input type="text" class="form-control mr-3 mb-2"> <div class="d-flex mt-2"><input type="text" readonly="readonly" class="d-block d-md-none form-control"> <input type="text" readonly="readonly" class="d-none d-md-block form-control"> <button type="button" class="mx-2 btn btn-sm btn-info">Start</button> <div role="status" class="mx-3 spinner-border text-info" style="display: none;"></div> <button disabled="disabled" type="button" class="mx-2 btn btn-sm btn-info">Stop</button> <button type="button" class="mx-2 btn btn-sm btn-danger">Reset</button></div></li><li class="list-group-item"><input type="text" class="form-control mr-3 mb-2"> <div class="d-flex mt-2"><input type="text" readonly="readonly" class="d-block d-md-none form-control"> <input type="text" readonly="readonly" class="d-none d-md-block form-control"> <button type="button" class="mx-2 btn btn-sm btn-info">Start</button> <div role="status" class="mx-3 spinner-border text-info" style="display: none;"></div> <button disabled="disabled" type="button" class="mx-2 btn btn-sm btn-info">Stop</button> <button type="button" class="mx-2 btn btn-sm btn-danger">Reset</button></div></li><li class="list-group-item"><input type="text" class="form-control mr-3 mb-2"> <div class="d-flex mt-2"><input type="text" readonly="readonly" class="d-block d-md-none form-control"> <input type="text" readonly="readonly" class="d-none d-md-block form-control"> <button type="button" class="mx-2 btn btn-sm btn-info">Start</button> <div role="status" class="mx-3 spinner-border text-info" style="display: none;"></div> <button disabled="disabled" type="button" class="mx-2 btn btn-sm btn-info">Stop</button> <button type="button" class="mx-2 btn btn-sm btn-danger">Reset</button></div></li><li class="list-group-item"><input type="text" class="form-control mr-3 mb-2"> <div class="d-flex mt-2"><input type="text" readonly="readonly" class="d-block d-md-none form-control"> <input type="text" readonly="readonly" class="d-none d-md-block form-control"> <button type="button" class="mx-2 btn btn-sm btn-info">Start</button> <div role="status" class="mx-3 spinner-border text-info" style="display: none;"></div> <button disabled="disabled" type="button" class="mx-2 btn btn-sm btn-info">Stop</button> <button type="button" class="mx-2 btn btn-sm btn-danger">Reset</button></div></li><li class="list-group-item"><input type="text" class="form-control mr-3 mb-2"> <div class="d-flex mt-2"><input type="text" readonly="readonly" class="d-block d-md-none form-control"> <input type="text" readonly="readonly" class="d-none d-md-block form-control"> <button type="button" class="mx-2 btn btn-sm btn-info">Start</button> <div role="status" class="mx-3 spinner-border text-info" style="display: none;"></div> <button disabled="disabled" type="button" class="mx-2 btn btn-sm btn-info">Stop</button> <button type="button" class="mx-2 btn btn-sm btn-danger">Reset</button></div></li><li class="list-group-item"><input type="text" class="form-control mr-3 mb-2"> <div class="d-flex mt-2"><input type="text" readonly="readonly" class="d-block d-md-none form-control"> <input type="text" readonly="readonly" class="d-none d-md-block form-control"> <button type="button" class="mx-2 btn btn-sm btn-info">Start</button> <div role="status" class="mx-3 spinner-border text-info" style="display: none;"></div> <button disabled="disabled" type="button" class="mx-2 btn btn-sm btn-info">Stop</button> <button type="button" class="mx-2 btn btn-sm btn-danger">Reset</button></div></li><li class="list-group-item"><input type="text" class="form-control mr-3 mb-2"> <div class="d-flex mt-2"><input type="text" readonly="readonly" class="d-block d-md-none form-control"> <input type="text" readonly="readonly" class="d-none d-md-block form-control"> <button type="button" class="mx-2 btn btn-sm btn-info">Start</button> <div role="status" class="mx-3 spinner-border text-info" style="display: none;"></div> <button disabled="disabled" type="button" class="mx-2 btn btn-sm btn-info">Stop</button> <button type="button" class="mx-2 btn btn-sm btn-danger">Reset</button></div></li></ul></div>
+  <script src="./Document_files/vue@2"></script>
+  <script>
+    const initTimer = id => {
+      return {
+        id: id,
+        name: '',
+        timer : null,                   // setInterval() を用いた、累積ミリ秒の加算用
+        status : 'stopped',             // 状態(stopped: 停止, running: 実行中)
+        runningAt : null,               // 計測の起点となる時点でのミリ秒
+        accumulationMilliSeconds : 0,   // タイマーが動いていた累積ミリ秒
+      }
+    }
+    const createEmptyTimer = id => new Array(15).fill('').map((v, i) => { return initTimer(i) })
+
+    const allResetDefault = {
+      status: 'default',
+      label: 'Reset all'
+    }
+    const allResetConfirm = {
+      status: 'confirm',
+      label: 'Are you sure?'
+    }
+    // タイマーは絶えず動いているので、watch で常時処理すると負荷が高いので 10 秒おきに watch させる
+    const saveTerm = 1000 * 10
+    new Vue({
+      el: '#app',
+      data: {
+        lastLocalStorageSavedAt: new Date().getTime(),
+        allResetCondition: allResetDefault,
+        lists: createEmptyTimer()
+      },
+      mounted() {
+        // ローカルストレージからの復元
+        if (localStorage.lists) {
+          loadedLists = JSON.parse(localStorage.lists);
+          // status はすべて stopped 停止状態にしておく
+          this.lists = loadedLists.map( (v) => {
+            v.status = 'stopped'
+            return v
+          })
+        }
+      },
+      methods: {
+        formatMs(_ms) {
+          const hour = Math.floor(_ms / 3600000)
+          const minute = Math.floor((_ms - 3600000 * hour) / 60000)
+          const hh = ('00' + hour).slice(-2)
+          const mm = ('00' + minute).slice(-2)
+          const ms = ('00000' + (_ms % 60000)).slice(-5)
+          return `${hh} : ${mm} : ${ms.slice(0,2)}.${ms.slice(2,5)} `
+        },
+        startTimer(id) {
+          if (this.lists[id].status === 'stopped') {
+            this.lists[id].status = 'running'
+            this.lists[id].runningAt = Date.now()
+            // 10ms ごとに経過ミリ秒を加算
+            this.lists[id].timer = setInterval( () => {
+              this.lists[id].accumulationMilliSeconds += (Date.now() - this.lists[id].runningAt)
+              this.lists[id].runningAt = Date.now()
+            }, 10)
+          }
+        },
+        stopTimer(id) {
+          if (this.lists[id].status === 'running') {
+            clearInterval(this.lists[id].timer)
+            this.lists[id].timer = null
+            this.lists[id].status = 'stopped'
+            this.lists[id].runningAt = null
+          }
+        },
+        resetTimer(id) {
+          clearInterval(this.lists[id].timer)
+          this.lists[id].timer = null
+          this.lists[id].status = 'stopped'
+          this.lists[id].runningAt = null
+          this.lists[id].accumulationMilliSeconds = 0
+          localStorage.lists = JSON.stringify(this.lists)
+          this.lastLocalStorageSavedAt = new Date().getTime()
+          this.allResetCondition = allResetDefault
+        },
+        allReset() {
+          if (this.allResetCondition.status === allResetDefault.status) {
+            this.allResetCondition = allResetConfirm
+            // その後確定しなくても 3 秒後に戻す
+            setTimeout(() => {
+              this.allResetCondition = allResetDefault
+            }, 3000)
+          } else {
+            for (let i = 0; i < 15; i++) {
+              this.stopTimer(i)
+            }
+            this.lists = createEmptyTimer()
+            localStorage.lists = JSON.stringify(this.lists)
+            this.lastLocalStorageSavedAt = new Date().getTime()
+            this.allResetCondition = allResetDefault
+          }
+        }
+      },
+      watch: {
+        lists: {
+          handler(newValue, oldValue) {
+            // ローカルストレージへの保存
+            // タイマーは絶えず動いているので、毎回保存するとちょっと負荷高い
+            const current = new Date().getTime()
+            if (this.lastLocalStorageSavedAt + saveTerm < current) {
+              localStorage.lists = JSON.stringify(this.lists)
+              this.lastLocalStorageSavedAt = current
+            }
+          },
+          deep: true
+        }
+      },
+    })
+  </script>
+
+
+<iframe frameborder="0" scrolling="no" style="background-color: transparent; border: 0px; display: none;" src="./Document_files/saved_resource.html"></iframe><div id="GOOGLE_INPUT_CHEXT_FLAG" input="" input_stat="{&quot;tlang&quot;:true,&quot;tsbc&quot;:true,&quot;pun&quot;:true,&quot;mk&quot;:true,&quot;ss&quot;:true}" style="display: none;"></div></body></html>
